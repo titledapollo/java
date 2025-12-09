@@ -1,0 +1,19 @@
+interface A
+{
+ int x=10;
+ public void show();
+}
+class AIC
+{
+ public static void main(String args[])
+ {
+  A a=new A()
+  {
+   public void show()
+   {
+    System.out.println("x="+x);
+   }
+  };
+  a.show();
+ }
+}

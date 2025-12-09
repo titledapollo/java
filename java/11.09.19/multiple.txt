@@ -1,0 +1,24 @@
+interface test{
+	int a=10;
+	 void show();
+}
+interface test1 extends test{
+	 void show(){
+		System.out.print("I love ");
+	}
+	void shows();
+}
+
+class test2 implements test1{
+	public void shows(){
+		System.out.print("My India");
+	}
+	
+	public static void main(String args[]){
+		test t =new test1();
+		t.show();
+		test2 a= new test2();
+		a.shows();
+	}
+	
+}

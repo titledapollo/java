@@ -1,0 +1,52 @@
+class test{
+public static void main(String []args){
+square s=new square();
+ract r=new ract();
+circle c=new circle();
+s.area(40);
+s.perimeter(40);
+r.area(40,60);
+r.perimeter(40,60);
+c.area(20);
+c.perimeter(20);
+}
+}
+
+class square extends test{
+public int x;
+public float y;
+void area(int a){
+x=a*a;
+System.out.println("Area of Square: "+x);
+}
+void perimeter(int a){
+x=4*a;
+System.out.println("Perimeter of Square: "+x);
+}
+}
+
+class ract extends test{
+public int x;
+public float y;
+void area(int a,int b){
+x=a*b;
+System.out.println("Area of Ractangel: "+x);
+}
+void perimeter(int a,int b){
+x=2*(a+b);
+System.out.println("Perimeter of Ractangel: "+x);
+}
+}
+
+class circle extends test{
+public int x;
+public float y;
+void area(int a){
+y=3.14f*a*a;
+System.out.println("Area of Circle: "+y);
+}
+void perimeter(int a){
+y=2*3.14f*a;
+System.out.println("Perimeter of Circle: "+y);
+}
+}  
